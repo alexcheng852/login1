@@ -1,0 +1,36 @@
+{% extends 'bar.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet type="text/css" href="{% static 'css/style.css' %}">
+    <SCRIPT language=JavaScript src="word.js"></SCRIPT>
+</head>
+<body>
+    <header>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="937" height="681" id="gmap_canvas" src="https://maps.google.com/maps?q=hongkong&t=&z=11&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://123movies-to.org">123movies</a></div><style>.mapouter{position:relative;text-align:right;height:681px;width:937px;}.gmap_canvas
+                {overflow:hidden;background:none!important;height:681px;width:937px;}</style>
+            </div>
+        <div class="hero">
+            <h3>以上就係我地既回收站</h3>
+        </div>
+    </header>
+    <div class="social-icons">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>  
+</body> 
+</html>
+{% endblock %}
